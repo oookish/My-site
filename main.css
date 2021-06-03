@@ -30,31 +30,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .container  {
   margin: 0 auto;
-  width: 1141px;
+  width: 1140px;
 }
 
 .header {
   height: 120px;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 78px;
 }
 
 .logo {
   display: block;
   position: absolute;
-  top: 29px;
+  top: 20px;
   left: 0;
 }
 
 .menu {
   position: absolute;
-  top: 42px;
-  left: 250px;
+  top: 30px;
+  left: 163px;
 }
 
 .contacts {
   position: absolute;
-  top: 27px;
+  top: 19px;
   right: 0;
   font-style: normal;
   text-align: right;
@@ -63,7 +63,11 @@ h1, h2, h3, h4, h5, h6 {
 .menu__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 54px;
+  margin-right: 50px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
 }
 
 .menu__title  {
@@ -93,13 +97,13 @@ h1, h2, h3, h4, h5, h6 {
 .hello__title {
   font-size: 72px;
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 27.5px;
+  line-height: 1.3;
+  margin-bottom: 30.5px;
 }
 
 .hello__text {
   font-size: 18px;
-  margin-bottom: 51.5px;
+  margin-bottom: 47.5px;
 }
 
 .hello__button {
