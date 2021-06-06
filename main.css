@@ -28,6 +28,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+p {
+  margin-top: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper  {
+  background: url(./img/main/first.png) center top no-repeat, url(./img/main/second.png) center bottom no-repeat;
+}
+
 .container  {
   margin: 0 auto;
   width: 1140px;
@@ -36,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   height: 120px;
   position: relative;
-  margin-bottom: 77px;
+  margin-bottom: 70px;
 }
 
 .logo {
@@ -75,6 +87,10 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.contacts__list {
+  margin-bottom: -8px;
+}
+
 .contacts__phone {
   text-decoration: none;
   font-size: 26px;
@@ -92,27 +108,334 @@ h1, h2, h3, h4, h5, h6 {
 
 .hello {
   width: 511px;
+  margin-bottom: 245px;
 }
 
 .hello__title {
   font-size: 75px;
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 32.5px;
+  line-height: 1.27;
+  margin-bottom: 28.5px;
 }
 
 .hello__text {
   font-size: 18px;
-  margin-bottom: 49.5px;
+  margin-bottom: 31.5px;
 }
 
 .hello__button {
   background: #F5170E;
   border-radius: 35px;
-  padding: 18px 35px;
+  padding: 18px 41px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+}
+
+/**section hello**/
+
+/**section offers**/
+
+.offers {
+  margin-bottom: 120px;
+}
+
+.offers__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.offers__item {
+  min-height: 449px;
+  background: #fff;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 22px;
+  width: 362px;
+  overflow: hidden;
+} 
+
+
+.offers__item:last-child {
+  margin-right: 0px;
+}
+
+.offers__header {
+  min-height: 144px;
+  margin-bottom: 0px;
+}
+
+.offers__content  {
+  padding: 26px 22px;
+  color: #303030;
+}
+
+.offers__subtitle {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 21px;
+  color: #000;
+}
+
+.offers__features {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 18px;
+}
+
+.offers__feature {
+  display: inline-block;
+  vertical-align: top;
+  width: 126px;
+  margin-right: 29px;
+  font-size: 16px;
+  color: #666;
+}
+
+.offers__feature:last-child {
+  margin-right: 0px;
+}
+
+.offers__feature-icon {
+  margin-right: 10px;
+}
+
+.offers__feature-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.offers__text {
+  font-size: 14px;
+  font-weight: 400;
+  width: 324px;
+  height: 63px;
+  margin-bottom: 24px;
+  line-height: 21px;
+}
+
+.offers__button {
+  width: 135px;
+  height: 55px;
+  background: #fff;
+  border: 1px solid #F5170E;
+  border-radius: 35px;
+  padding: 14px 28px;
+  color: #F5170E;
+  font-weight: 700;
+}
+
+.offers__link {
+  text-decoration: none;
+}
+
+.offers__button--red {
+  background: #F5170E;
+  color: #fff;
+}
+
+/**section offers**/
+
+/**section news**/
+
+.news__title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.news__list {
+  margin-bottom: 52px;
+}
+
+.news__item {
+  width: 557px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-right: 19px;
+  
+}
+
+.news__item:last-child {
+  margin-right: 0px;
+}
+
+.news__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.news__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px 30px;
+  height: 165px;
+}
+
+.news__date {
+  font-size: 14px;
+  margin-bottom: 15.5px;
+}
+
+.news__subtitle {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 1.2px;
+}
+
+.pagination {
+  text-align: center;
+  margin-bottom: 144px;
+}
+
+.pagination__list {
+  margin-left: 25px;
+}
+
+
+.pagination__info, .pagination__list {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagination__item--link .pagination__link {
+  background: #fff;
+  color: #F5170E;
+  line-height: 32px;
+}
+
+.pagination__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/**section news**/
+
+/**section about**/
+
+.about {
+  margin-bottom: 56px;
+}
+
+.about__content::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 490px;
+  height: 505px;
+  background: url(./img/about/gates.png) center center / cover no-repeat;
+  border-radius: 5px;
+}
+
+.about__desc {
+  width: 785px;
+  height: 455px;
+  background: url(./img/about/mountains.png);
+  padding: 69px 82px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -141px;
+  margin-top: 97px;
+  border-radius: 5px;
+}
+
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 38px;
+}
+
+.about__text {
+  width: 502px;
+  height: 135px;
+  color: #000;
+  margin-bottom: 41px;
+  line-height: 26px;
+}
+
+.about__button {
+  background: #F5170E;
+  border-radius: 35px;
+  padding: 18px 41px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/**section about**/
+
+/**footer**/
+
+.footer {
+  height: 146px;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__logo {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+
+.footer__menu {
+  position: absolute;
+  top: 38px;
+  left: 164px;
+}
+
+.footer__social {
+  position: absolute;
+  top: 49px;
+  right: 252px;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social__item:last-child {
+  margin-right: 0px;
+}
+
+.footer__contacts {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  font-style: normal;
+  text-align: right;
+}
+
+.footer__contact {
+  font-size: 11px;
+  color: #9A9A9A;
 }

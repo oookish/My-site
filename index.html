@@ -31,7 +31,9 @@
           </ul>
         </nav>
         <address class="contacts">
-          <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+          <div class="contacts__list">
+            <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+          </div>
           <div class="contacts__workhours">График работы</div>
         </address>
       </header>
@@ -42,69 +44,83 @@
           <a href="#" class="hello__button">Подробнее</a>
         </section>
         <section class="offers">
-          <h2 class="offers__title">Горящие туры</h2>
+          <h2 class="offers__title">Горящие туры
+            <img src="./img/offers/flame.png" alt="">
+          </h2>
           <ul class="offers__list">
             <li class="offers__item">
-              <img src="./img/tours/river.jpg" alt="offers__thailand" class="offers__pic">
+              <div class="offers__header">
+                <img src="./img/tours/river.png" alt="offers__thailand" class="offers__pic">
+              </div>
               <div class="offers__content">
-                <h4 class="offers__subtitle">Тайланд</h4>
+                <h3 class="offers__subtitle">Тайланд</h3>
                 <div class="offers__features">
                   <div class="offers__feature">
-                    <img src="" alt="calendar" class="offers__feature-icon">
+                    <img src="./img/offers/calendar.png" alt="calendar" class="offers__feature-icon">
                     <div class="offers__feature-text">7-12 ночей</div>
                   </div>
                   <div class="offers__feature">
-                    <img src="" alt="breakfast" class="offers__feature-icon">
+                    <img src="./img/offers/meal.png" alt="breakfast" class="offers__feature-icon">
                     <div class="offers__feature-text">Завтраки</div>
                   </div>
                 </div>
-                <p class="offers__text">
-                  Равным образом постоянное обеспечения нашей деятельности позволяет оценить значение систем массовго
+                <div class="offers__text">
+                  Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массовго
                   участия
-                </p>
-                <a href="" class="offers__button offres__button--light">Смотреть</a>
+                </div>
+                <div class="offers__button">
+                  <a href="" class="offers__link">Смотреть</a>
+                </div>
               </div>
             </li>
             <li class="offers__item">
-              <img src="./img/tours/pool.jpg" alt="offers__bali" class="offers__pic">
+              <div class="offers__header">
+                <img src="./img/tours/pool.png" alt="offers__bali" class="offers__pic">
+              </div>
               <div class="offers__content">
-                <h4 class="offers__subtitle">Бали</h4>
+                <h3 class="offers__subtitle">Бали</h3>
                 <div class="offers__features">
                   <div class="offers__feature">
-                    <img src="" alt="calendar" class="offers__feature-icon">
+                    <img src="./img/offers/calendar.png" alt="calendar" class="offers__feature-icon">
                     <div class="offers__feature-text">7-12 ночей</div>
                   </div>
                   <div class="offers__feature">
-                    <img src="" alt="breakfast" class="offers__feature-icon">
+                    <img src="./img/offers/meal.png" alt="breakfast" class="offers__feature-icon">
                     <div class="offers__feature-text">Завтраки</div>
                   </div>
                 </div>
-                <p class="offers__text">
-                  Равным образом постоянное обеспечения нашей деятельности позволяет оценить значение систем массовго
+                <div class="offers__text">
+                  Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массовго
                   участия
-                </p>
-                <a href="" class="offres__button offers__button--red">Смотреть</a>
+                </div>
+                <div class="offers__button offers__button--red">
+                  <a href="" class="offers__link offers__link red">Смотреть</a>
+                </div>
               </div>
             </li>
             <li class="offers__item">
-              <img src="./img/tours/ocean.jpg" alt="offers__indonesia" class="offers__pic">
+              <div class="offers__header">
+                <img src="./img/tours/ocean.png" alt="offers__indonesia" class="offers__pic">
+              </div>
               <div class="offers__content">
-                <h4 class="offers__subtitle">Индонезия</h4>
+                <h3 class="offers__subtitle">Индонезия</h3>
                 <div class="offers__features">
                   <div class="offers__feature">
-                    <img src="" alt="calendar" class="offers__feature-icon">
+                    <img src="./img/offers/calendar.png" alt="calendar" class="offers__feature-icon">
                     <div class="offers__feature-text">7-12 ночей</div>
                   </div>
                   <div class="offers__feature">
-                    <img src="" alt="breakfast" class="offers__feature-icon">
+                    <img src="./img/offers/meal.png" alt="breakfast" class="offers__feature-icon">
                     <div class="offers__feature-text">Завтраки</div>
                   </div>
                 </div>
-                <p class="offers__text">
-                  Равным образом постоянное обеспечения нашей деятельности позволяет оценить значение систем массовго
+                <div class="offers__text">
+                  Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массовго
                   участия
-                </p>
-                <a href="" class="offers__button">Смотреть</a>
+                </div>
+                <div class="offers__button">
+                  <a href="" class="offers__link">Смотреть</a>
+                </div>
               </div>
             </li>
           </ul>
@@ -113,18 +129,18 @@
           <h2 class="news__title">Новости и акции</h2>
           <ul class="news__list">
             <li class="news__item">
-              <img src="" alt="news__plane" class="news__pic">
+              <img src="./img/news/plain.jpg" alt="news__plane" class="news__pic">
               <div class="news__content">
                 <div class="news__date">Декабрь 2019</div>
-                <h3 class="news__title">Дешевые путевки на Новый Год</h3>
+                <h3 class="news__subtitle">Дешевые путевки на Новый Год!</h3>
                 <p class="news__text">Проведи новый год в Тайланде</p>
               </div>
             </li>
             <li class="news__item">
-              <img src="" alt="news__surf" class="news__pic">
+              <img src="./img/news/surfer.jpg" alt="news__surf" class="news__pic">
               <div class="news__content">
                 <div class="news__date">Декабрь 2019</div>
-                <h3 class="news__title">Акиция для серфенгистов</h3>
+                <h3 class="news__subtitle">Акиция для серфенгистов!</h3>
                 <p class="news__text">В сезон больших волны скидка на путевку в Тайланд на остров серфингистов. Удачного
                   пути!</p>
               </div>
@@ -133,37 +149,46 @@
           <div class="pagination">
             <div class="pagination__info">Страница 1 из 7</div>
             <ul class="pagination__list">
-              <li class="pagination__item">1</li>
-              <li class="pagination__item">2</li>
-              <li class="pagination__item">3</li>
-              <li class="pagination__item">4</li>
-              <li class="pagination__item">5</li>
-              <li class="pagination__item">6</li>
-              <li class="pagination__item">7</li>
+              <li class="pagination__item  pagination__item--link">
+                <a href="#" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">4</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">5</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">6</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">7</a>
+              </li>
             </ul>
           </div>
         </section>
         <section class="about">
-          <img src="" alt="about__bike" class="about__pic">
           <div class="about__content">
-            <img src="" alt="about__mountains" class="about__pic">
-            <h4 class="about__title">О нас</h4>
-            <div class="about__text">
-              AirAsia – это один из бесспорных лидеров туристического рынка. Компания образована
-              в 1995 году. За годы своего существования AirAsia превратилась в
-              преуспевающую компанию с мировым именем и многочисленными представительствами по всему миру. AirAsia
-              входит в крупный холдинг компаний, которым принадлежат сети отелей по всей Азии и имеют собственный парк
-              авиалайнеров. За годы своей успешной работы компания выработала собственную стратегию развития,
-              направленную на повышение качества услуг, а также вывела на новый уровень сервис обслуживания клиентов и
-              создала выгодные условия сотрудничества для своих партнеров.
+            <div class="about__desc">
+              <h2 class="about__title">О нас</h2>
+              <div class="about__text">
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                </p>
+              </div>
+              <a href="" class="about__button">Подробнее</a>
             </div>
-            <a href="" class="about__button">Подробнее</a>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <a href="/" class="footer__logo">
-          <img src="" alt="logo AirAsia" class="logo__pic">
+        <a href="#" class="footer__logo">
+          <img src="./img/logo/logo AirAsia.png" alt="logo AirAsia" class="logo__pic">
         </a>
         <nav class="footer__menu">
           <ul class="menu__list">
