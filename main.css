@@ -5,6 +5,7 @@ body {
   line-height: 1.42;
   background:  #001821;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
 a {
