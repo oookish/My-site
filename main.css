@@ -37,7 +37,18 @@ p {
   box-sizing: border-box;
 }
 
+
+
+body, html {
+  height: 100%;
+}
+
 .wrapper  {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 1200px;
   background: url(./img/main/first.png) center top no-repeat, url(./img/main/second.png) center bottom no-repeat;
 }
 
@@ -46,29 +57,32 @@ p {
   width: 1140px;
 }
 
+
 .header {
-  height: 120px;
-  position: relative;
-  margin-bottom: 70px;
+  padding-top: 27px;
+  margin-bottom: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+.header__col--align--right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo {
   display: block;
-  position: absolute;
-  top: 21px;
-  left: 0;
+  margin-right: 79px;
 }
 
-.menu {
-  position: absolute;
-  top: 30px;
-  left: 164px;
-}
 
 .contacts {
-  position: absolute;
-  top: 19px;
-  right: 0;
   font-style: normal;
   text-align: right;
 }
@@ -89,7 +103,7 @@ p {
 }
 
 .contacts__list {
-  margin-bottom: -8px;
+  margin-bottom: -7px;
 }
 
 .contacts__phone {
@@ -108,8 +122,12 @@ p {
 /**section hello**/
 
 .hello {
-  width: 511px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 52%;
   margin-bottom: 245px;
+  min-height: 332px;
 }
 
 .hello__title {
@@ -133,6 +151,7 @@ p {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  align-self: flex-start;
 }
 
 /**section hello**/
@@ -140,7 +159,7 @@ p {
 /**section offers**/
 
 .offers {
-  margin-bottom: 120px;
+  margin-bottom: 125px;
 }
 
 .offers__title {
@@ -150,12 +169,15 @@ p {
   letter-spacing: 1px;
 }
 
+.offers__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .offers__item {
   min-height: 449px;
   background: #fff;
   border-radius: 6px;
-  display: inline-block;
-  margin-right: 22px;
   width: 362px;
   overflow: hidden;
 } 
@@ -183,16 +205,13 @@ p {
 }
 
 .offers__features {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 18px;
 }
 
 .offers__feature {
-  display: inline-block;
-  vertical-align: top;
-  width: 126px;
-  margin-right: 29px;
+  align-self: flex-start;
   font-size: 16px;
   color: #666;
 }
@@ -394,28 +413,35 @@ p {
 /**footer**/
 
 .footer {
-  height: 146px;
+  height: 135px;
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center
+}
+
+.footer__col--align--right {
+  justify-content: flex-end;
 }
 
 .footer__logo {
   display: block;
-  position: absolute;
-  top: 45px;
-  left: 0;
 }
 
 .footer__menu {
   position: absolute;
-  top: 57px;
   left: 164px;
 }
 
 .footer__social {
-  position: absolute;
-  top: 49px;
-  right: 252px;
+  margin-right: 60px;
 }
 
 .social__item {
@@ -429,9 +455,6 @@ p {
 }
 
 .footer__contacts {
-  position: absolute;
-  top: 45px;
-  right: 0;
   font-style: normal;
   text-align: right;
 }
@@ -440,3 +463,199 @@ p {
   font-size: 11px;
   color: #9A9A9A;
 }
+
+/**footer**/
+
+/**services page**/
+
+.top-line__header {
+  padding-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  min-height: 412px;
+  background:url(./img/services/header/headline\ 1.png) right 20% top no-repeat;
+}
+
+.header--services {
+  margin-bottom: 89px;
+}
+
+.top-line__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-title {
+  padding-bottom: 97px;
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.breadcrumbs__item::after {
+  padding-left: 4px;
+  content: "/";
+  color: #9A9A9A;
+}
+
+.breadcrumbs__item:first-child {
+  padding-left: 0px;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  font-weight: 700;
+} 
+
+.breadcrumbs__link {
+  font-size: 14px;
+  color: #9A9A9A;
+}
+
+.pagination--services {
+  color: #000;
+}
+
+.page-content {
+  background: #fff;
+  color: #303030;
+}
+
+.container-services {
+  margin: 0 auto;
+  width: 1140px;
+  padding: 98px 0;
+}
+
+.services {
+  margin-bottom: 65px;
+}
+
+.service {
+  display: flex;
+  margin-bottom: 51px;
+}
+
+.service__img {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.service__content {
+  flex: 1;
+}
+
+
+.service__pic {
+  min-width: 460px;
+  min-height: 333px;
+  border-radius: 5px;
+}
+
+.service__title {
+  font-size: 37px;
+  font-weight: 700;
+  margin-bottom: 39px;
+  color: #000;
+}
+
+.service__desc {
+  line-height: 1.7;
+  margin-bottom: 33px;
+}
+
+.btn {
+  color: #F5170E;
+  border: 1px solid #F5170E;
+  border-radius: 35px;
+  padding: 18px 41px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+.btn-red {
+  color: #fff;
+  background: #F5170E;
+}
+
+.pagination--services {
+  margin-bottom: 62px;
+}
+
+.pagination__item--services .pagination__link {
+  background: #F5170E;
+  color: #fff;
+  line-height: 32px;
+}
+
+.inner-section {
+  background: #F4F5F5;
+  color: #1A1B1E;
+  padding: 14px 0 116px;
+}
+
+.inner-section__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 66px;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  margin-left: 90px;
+}
+
+.partners__item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
+.partners__link {
+  display: flex;
+  width: 217px;
+  height: 100px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.partners__pic, .service__pic  {
+  display: block;
+  max-width: 100%;
+}
+
+.inner-footer {
+  height: 132px;
+  background: #001821;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.footer__menu--services {
+  left: 554px;
+}
+
+/**services page**/
